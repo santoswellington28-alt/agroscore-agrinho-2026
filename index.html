@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroScore - Pegada Ecológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AgroScore: Pegada Ecológica</h1>
+        <p class="subtitle">Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        
+        <div id="setup-section">
+            <label for="cultura">Escolha a cultura agrícola:</label>
+            <select id="cultura">
+                <option value="Cana-de-açúcar">Cana-de-açúcar</option>
+                <option value="Soja">Soja</option>
+                <option value="Milho">Milho</option>
+            </select>
+            <button onclick="iniciarQuiz()">Iniciar Avaliação</button>
+        </div>
+
+        <div id="quiz-section" class="hidden">
+            <h3 id="pergunta-titulo"></h3>
+            <div id="opcoes-container"></div>
+        </div>
+
+        <div id="resultado-section" class="hidden">
+            <h2>Resultado da sua Avaliação</h2>
+            <div class="score-box">
+                <span id="score-final">0</span>/100
+            </div>
+            <p id="mensagem-resultado"></p>
+            <button onclick="reiniciar()">Refazer Avaliação</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
